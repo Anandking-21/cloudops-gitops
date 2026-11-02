@@ -20,7 +20,8 @@ spec:
         image: cloudops-backend:v1.0.1
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8000
+        - name: http
+          containerPort: 8000
         resources:
           limits:
             cpu: "250m"
@@ -51,7 +52,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 8000
+  - name: http
+    port: 8000
     targetPort: 8000
   selector:
     app: cloudops-backend
