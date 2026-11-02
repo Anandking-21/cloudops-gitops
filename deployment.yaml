@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: cloudops-backend:9fd612419848896ab572ececee9e7f8382568a58
+        image: cloudops-backend:e555d61b501990ce08664a47325f1d2c12d18db8
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
